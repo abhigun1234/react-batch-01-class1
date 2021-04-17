@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import WithoutJsx from './WithoutJsx';
+import Welcome from './Welcome';
+import StateDemo from './StateDemo';
+import EventBinding from './EventBinding';
+import JsxDemo from './JsxDemo';
+import PropdDemo from './PropdDemo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <WithoutJsx ></WithoutJsx>
+      <Welcome name='abhishek'></Welcome>
+      <Welcome name='ravi'></Welcome> */}
+      {/* <StateDemo></StateDemo>
+      <EventBinding></EventBinding> */}
+      <JsxDemo></JsxDemo>
+      <PropdDemo name="abhishek"></PropdDemo>
+      <PropdDemo name="sashi"></PropdDemo>
+      <PropdDemo name="Jyoti"></PropdDemo>
     </div>
   );
 }
